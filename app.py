@@ -109,41 +109,50 @@ if prompt:
             st.session_state['blogImage']=generate_multi_thumbnail_background(blogRefineText)
 
 if st.session_state['twitter']:
-    st.write("Twitter")
+    st.header("Twitter Post Generated")
+    # st.write("Twitter")
     message(st.session_state['twitter'])
     st.image(st.session_state['twitterImage'],caption='Generated Image',use_column_width=True)
     # st.write(newRespone)
 if st.session_state['instagram']:
-    st.write("Instagram")
+    st.header("Instagram Post Generated")
+    # st.write("Instagram")
     message(st.session_state['instagram'])
     st.image(st.session_state['instagramImage'],caption='Generated Image',use_column_width=True)
     # st.write(newRespone)
 if st.session_state['facebook']:
-    st.write("Facebook")
+    st.header("Facebook Post Generated")
+    # st.write("Facebook")
     message(st.session_state['facebook'])
     st.image( st.session_state['faceebokImage'],caption='Generated Image',use_column_width=True)
     # st.write(newRespone)
 if st.session_state['linkedin']:
-    st.write("LinkedIn")
+    st.header("LinkedIn Post Generated")
+    # st.write("LinkedIn")
     message(st.session_state['linkedin'])
     st.image(st.session_state['linkedinImage'],caption='Generated Image',use_column_width=True)
     # st.write(newRespone)
 if st.session_state['blogTitle']:
-    st.write("Blog Title")
+    st.header("Blog Title Generated")
+    # st.write("Blog Title")
     for i in range(0,5):
         message(st.session_state['blogTitle'][i])
 if st.session_state['blogStructure']:
-    st.write("Blog Structure")
+    st.header("Blog Structure Generated")
+    # st.write("Blog Structure")
     message(st.session_state['blogStructure'])
 if st.session_state['blogContent']:
-    st.write("Blog Content")
+    st.header("Blog Content Generated")
+    # st.write("Blog Content")
     message(st.session_state['blogContent'])
 if st.session_state['blogImage']:
-    st.write("Blog Image")
+    st.header("Blog Image Generated")
+    # st.write("Blog Image")
     for i in range(0,3): 
         st.image(st.session_state['blogImage'][i],caption='Generated Image',use_column_width=True)
 if st.session_state['blogSEO']:
-    st.write("Blog SEO")
+    st.header("Blog SEO words Generated")
+    # st.write("Blog SEO")
     message(st.session_state['blogSEO'])
 # if st.session_state['blogLinks']:
 #     st.write("Blog Links")

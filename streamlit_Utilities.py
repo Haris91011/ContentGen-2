@@ -296,7 +296,7 @@ def generate_thumbnail_background(text):
     response = openai.Image.create(
         prompt=f"{text}",
         n=3,
-        size = "256x256"        
+        size = "512x512"        
         )
 
     # Get the image URL from the response
@@ -324,7 +324,7 @@ def generate_multi_thumbnail_background(text):
         response = openai.Image.create(
         prompt=f"{new}",
         n=1,
-        size = "256x256"        
+        size = "512x512"        
         )
 
         # Get the image URL from the response
